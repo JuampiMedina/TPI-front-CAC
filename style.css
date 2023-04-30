@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    background-color: rgb(70, 70, 70);
+}
+
+.comprar{
+    color: limegreen;
+}
+
+nav div .navbar-nav a:hover {
+    color: white;
+}
+
+.carousel2 img{
+    height: 55vh;
+}
+
+.background-hawaii{
+    background-color: rgb(70, 70, 70);
+}    
+
+.charla{
+    color:gray;
+    text-decoration-style: dotted;
+    -moz-text-decoration-style: dotted;
+}
+
+.footer-background{
+    background: rgb(4,37,47);
+    background: linear-gradient(90deg, rgba(4,37,47,1) 0%, rgba(2,77,93,1) 100%);
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
