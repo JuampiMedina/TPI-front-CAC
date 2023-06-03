@@ -72,7 +72,7 @@ const submit = (e) => {
     
     if (accept == true && tickets !== false){
         alert(acceptText)
-        location.href = "/compra_satis.html"
+        location.href = "./compra_satis.html"
     } 
     else {
         n = 0
