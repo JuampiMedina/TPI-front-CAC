@@ -15,7 +15,9 @@ body {
 .comprar{
     color: limegreen;
 }
-
+.background-compra{
+    background-color: rgb(70, 70, 70);
+}
 nav div .navbar-nav a:hover {
     color: white;
 }
@@ -43,3 +45,4 @@ footer a {
     color: whitesmoke;
     text-decoration: none;
 }
+
