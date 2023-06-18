@@ -1,13 +1,13 @@
-const btnComprar =document.getElementById("Seguir")
-const btnVolver =document.getElementById("Volver")
+const btnBuy =document.getElementById("Continue")
+const btnBack =document.getElementById("Return")
 
 const buy = () => {
-    location.href = "./compra.html"
+    location.href = "./buy.html"
     } 
 
 const back = () => {
     location.href = "./index.html"
     } 
 
-btnComprar.addEventListener("click",buy)
-btnVolver.addEventListener("click",back)
+btnBuy.addEventListener("click",buy)
+btnBack.addEventListener("click",back)

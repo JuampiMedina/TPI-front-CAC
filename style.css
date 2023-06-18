@@ -12,10 +12,7 @@ body {
     background-color: rgb(70, 70, 70);
 }
 
-.comprar{
-    color: limegreen;
-}
-.background-compra{
+.background-buy{
     background-color: rgb(70, 70, 70);
 }
 nav div .navbar-nav a:hover {
@@ -30,7 +27,7 @@ nav div .navbar-nav a:hover {
     background-color: rgb(70, 70, 70);
 }    
 
-.charla{
+.talk{
     color:gray;
     text-decoration-style: dotted;
     -moz-text-decoration-style: dotted;

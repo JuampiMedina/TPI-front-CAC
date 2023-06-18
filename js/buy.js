@@ -17,13 +17,13 @@ const categories = {
 
 const textToPay = "Total a pagar: $ "
 
-const form = document.forms.datos
+const form = document.forms.dates
 
 const inputs = form.getElementsByTagName("input")
 const select = form.getElementsByTagName("select")[0]
 const totalPay = document.getElementById("total")
-const btnBorrar =document.getElementById("borrar")
-const btnEnviar =document.getElementById("resumen")
+const btnErase =document.getElementById("erase")
+const btnResume =document.getElementById("resume")
 
 totalPay.innerText = textToPay
 
@@ -36,6 +36,7 @@ const totalPrice = () => {
 const resetCategory = () => {
     total = null
     type = null
+    category = null
     cardColor()
     totalPay.innerText = textToPay
 } 
@@ -72,7 +73,7 @@ const submit = (e) => {
     
     if (accept == true && tickets !== false){
         alert(acceptText)
-        location.href = "./compra_satis.html"
+        location.href = "./buy_ok.html"
     } 
     else {
         n = 0
@@ -87,17 +88,17 @@ const submit = (e) => {
 
 const setCategory = (e) => {
     const option = e.target.value
+    console.log (option)
     if (option === "none"){
         resetCategory()
-        return
-    }
+        return}   
     category=option
     const index = categories[category].value
     const container = cardsContainer[index]
     type = index
     changeColor (container, index)
-    totalPrice ()
     cardColor()
+    totalPrice ()
 }
 
 const setQuantity = (e) => {
@@ -112,8 +113,8 @@ const setQuantity = (e) => {
 }
 
 
-btnBorrar.addEventListener("click",reset)
-btnEnviar.addEventListener("click",submit)
+btnErase.addEventListener("click",reset)
+btnResume.addEventListener("click",submit)
 form.category.addEventListener("change",setCategory)
 form.quantity.addEventListener("change",setQuantity)
 form.quantity.addEventListener("keyup",setQuantity)
