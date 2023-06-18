@@ -37,6 +37,7 @@ const resetCategory = () => {
     total = null
     type = null
     category = null
+    quantity = null
     cardColor()
     totalPay.innerText = textToPay
 } 
