@@ -46,7 +46,7 @@ const reset = (e) => {
         input.value =""
         select.value = "none"
     }
-    quantity = 0
+    quantity= 0
     resetCategory()
 }
 
