@@ -37,7 +37,6 @@ const resetCategory = () => {
     total = null
     type = null
     category = null
-    quantity = null
     cardColor()
     totalPay.innerText = textToPay
 } 
@@ -47,6 +46,7 @@ const reset = (e) => {
         input.value =""
         select.value = "none"
     }
+    quantity = 0
     resetCategory()
 }
 
